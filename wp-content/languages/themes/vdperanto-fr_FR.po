@@ -1,0 +1,32 @@
+# Translation of Themes - vdperanto in French (France)
+# This file is distributed under the same license as the Themes - vdperanto package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-11-17 13:23:27+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Themes - vdperanto\n"
+
+#. Description of the plugin/theme
+msgid "A Business theme ideal for creating a corporate or business website. Vdperanto is a child theme of BusiProf WordPress Theme with a white background. Vdperanto is available in different locales."
+msgstr "Un thème business idéal pour créer un site d’entreprise ou d’affaires. Vdperanto est un thème enfant du thème WordPress BusiProf avec un arrière-plan blanc. Vdperanto est disponible dans de multiple langues."
+
+#. Theme Name of the plugin/theme
+msgid "vdperanto"
+msgstr "vdperanto"
+
+#. Author URI of the plugin/theme
+msgid "https://www.webriti.com"
+msgstr "https://www.webriti.com"
+
+#. Author of the plugin/theme
+msgid "webriti"
+msgstr "webriti"
+
+#. Theme URI of the plugin/theme
+msgid "https://webriti.com/vdperanto-details-page/"
+msgstr "https://webriti.com/vdperanto-details-page/"
