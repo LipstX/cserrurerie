@@ -19,7 +19,10 @@
 		<div id="custom-header">
 			<div class="boxed-wrapper">
 				<img id="custom-logo" src="http://localhost/cserrurerie/wp-content/uploads/custom/cornouaille-serrurie-custom-logo.png" alt="Cornouaille Serrurerie">
-				<img id="custom-icon-header" src="http://localhost/cserrurerie/wp-content/uploads/custom/cornouaille-serrurie-24.png" alt="Cornouaille Serrurerie 24h sur 24">
+				<div id="custom-header-right">
+					<img id="custom-icon-header" src="http://localhost/cserrurerie/wp-content/uploads/custom/cornouaille-serrurie-24.png" alt="Cornouaille Serrurerie 24h sur 24">
+					<div id="custom-phone-number">06 59 34 21 75</div>
+				</div>
 			</div>
 		</div>
 

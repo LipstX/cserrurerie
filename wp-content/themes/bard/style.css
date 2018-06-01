@@ -373,7 +373,7 @@ html {
 }
 
 #custom-header {
-  background-color: #ffffff;
+  background: url(http://localhost/cserrurerie/wp-content/uploads/custom/custom-pattern.png);
   height: 140px;
   padding: 10px 0;
 }
@@ -381,14 +381,30 @@ html {
 #custom-header .boxed-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 #custom-logo {
-  height: 120px;
+  height: 160px;
+  z-index: 10;
+}
+
+#custom-header-right {
+  display: flex;
+  align-items: flex-end;
+  margin-top: -5px;
 }
 
 #custom-icon-header {
-  height: 120px;
+  height: 100px;
+}
+
+#custom-phone-number {
+  font-family: "Open Sans";
+  color: #000091;
+  font-size: 60px;
+  margin-left: 10px;
+  margin-bottom: -10px;
 }
 
 #page-header.boxed-wrapper {
@@ -2944,6 +2960,7 @@ body {
   font-size: 15px;
   letter-spacing: 0px;
   line-height: 25px;
+  background: url(http://localhost/cserrurerie/wp-content/uploads/custom/custom-pattern.png);
 }
 
 .woocommerce div.product .product_title {
@@ -3127,4 +3144,16 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+}
+
+/*--------------------------------------------------------------
+Changes for erasing existing styles 
+--------------------------------------------------------------*/
+
+.page-title {
+  display: none;
+}
+
+#page-footer .footer-copyright{
+  background-color: #161a2d;
 }

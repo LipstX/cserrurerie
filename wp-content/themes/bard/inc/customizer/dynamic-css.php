@@ -863,61 +863,7 @@ $css = '';
 		';
 	}
 
-	// Blog Page Dropcaps
-	if ( bard_options( 'blog_page_show_dropcaps' ) === true ) {
-		$css .= "
-			.home .post-content > p:first-of-type:first-letter,
-			.archive .post-content > p:first-of-type:first-letter {
-				float: left;
-				margin: 6px 9px 0 -1px;
-				font-family: 'Montserrat';
-				font-weight: normal;
-				font-style: normal;
-				font-size: 81px;
-				line-height: 65px;
-				text-align: center;
-				text-transform: uppercase;
-				color: #030303;
-			}
-
-			@-moz-document url-prefix() {
-				.home .post-content > p:first-of-type:first-letter,
-				.archive .post-content > p:first-of-type:first-letter {
-				    margin-top: 10px !important;
-				}
-			}
-		";
-	}
-
-	// Single Page Dropcaps
-	if ( bard_options( 'single_page_show_dropcaps' ) === true ) {
-		$css .= "
-			.blog-classic-style .post-content > p:first-of-type:first-letter,
-			.single .post-content > p:first-of-type:first-letter,
-			article.page .post-content > p:first-child:first-letter {
-			  	float: left;
-				margin: 6px 9px 0 -1px;
-				font-family: 'Montserrat';
-			  	font-weight: normal;
-				font-style: normal;
-				font-size: 81px;
-				line-height: 65px;
-				text-align: center;
-				text-transform: uppercase;
-				color: #030303;
-			}
-
-			@-moz-document url-prefix() {
-				.blog-classic-style .post-content > p:first-of-type:first-letter,
-				.single .post-content > p:first-of-type:first-letter,
-				article.page .post-content > p:first-child:first-letter {
-				    margin-top: 10px !important;
-				}
-			}
-		";
-	}
-
-
+	
 /*
 ** Typography =====
 */
