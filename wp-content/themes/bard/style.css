@@ -403,6 +403,7 @@ html {
   font-family: "Open Sans";
   color: #000091;
   font-size: 60px;
+  font-weight: 700;
   margin-left: 10px;
   margin-bottom: -10px;
 }
@@ -1066,9 +1067,15 @@ sup {
 }
 
 /* Menu */
+.main-menu-container {
+  margin: auto;
+  max-width: 1160px;
+}
+
 #main-menu {
   width: auto;
-  padding: 0 55px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #main-menu li {
@@ -1078,20 +1085,8 @@ sup {
 #main-menu > li {
   display: inline-block;
   list-style: none;
-}
-
-#main-menu > li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -3px;
-  bottom: 0;
-  width: 5px;
-  height: 5px;
-  margin: auto 0;
-  -ms-transform: rotateZ(-45deg);
-  -webkit-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
+  padding: 0 30px;
+  flex-grow: 1;
 }
 
 #main-menu > li:last-child:after {
@@ -1100,17 +1095,15 @@ sup {
 
 #main-menu li a {
   display: block;
+  justify-content: space-between;
+  padding: 0 50px;
   position: relative;
-  padding: 0 17px;
+  padding: 0;
 }
 
 #main-menu > li > a {
   display: block;
   text-decoration: none;
-}
-
-#main-menu li:first-child a {
-  padding-left: 0px;
 }
 
 #main-menu li:last-child a {
@@ -3156,4 +3149,16 @@ Changes for erasing existing styles
 
 #page-footer .footer-copyright{
   background-color: #161a2d;
+}
+
+.current-menu-item {
+  background-color: #000091;
+}
+
+#main-nav li.current-menu-item > a {
+  color: #FFFFFF !important;
+}
+
+#main-nav a:hover {
+  color: #ffa112 !important;
 }
