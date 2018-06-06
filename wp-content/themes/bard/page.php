@@ -64,6 +64,13 @@
 
 	?>
 
+	<?php if ( bard_options('page_footer_show_scrolltop') === true ) : ?>
+		<span class="scrolltop">
+			<span class="icon-angle-up"></span>
+			<span><?php esc_html_e( 'Back to top', 'bard' ); ?></span>
+		</span>
+	<?php endif; ?>
+
 </div><!-- #page-content -->
 
 <?php get_footer(); ?>

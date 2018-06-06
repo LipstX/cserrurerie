@@ -22,15 +22,6 @@
 
 				<div class="page-footer-inner <?php echo bard_options( 'general_footer_width' ) === 'contained' ? 'boxed-wrapper': ''; ?>">
 					
-					<!-- Footer Logo -->
-					<?php if ( bard_options( 'page_footer_logo' ) != '' ) : ?>
-					<div class="footer-logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr( bloginfo('name') ); ?>">
-							<img src="<?php echo esc_url( wp_get_attachment_url( bard_options( 'page_footer_logo' ) ) ); ?>" alt="<?php esc_attr( bloginfo('name') ); ?>">
-						</a>
-					</div>
-					<?php endif; ?>
-					
 					<div class="copyright-info">
 						<?php
 
@@ -53,14 +44,39 @@
 							</a>
 						</span>
 					</div>
-		
-					<?php if ( bard_options('page_footer_show_scrolltop') === true ) : ?>
-					<span class="scrolltop">
-						<span class="icon-angle-up"></span>
-						<span><?php esc_html_e( 'Back to top', 'bard' ); ?></span>
-					</span>
-					<?php endif; ?>
-					
+
+					<div class="footer-main-container">
+						<div class="footer-left-panel footer-panel">
+							<div class="footer-nav-title">Navigation</div>
+							<div class="footer-nav">
+								<?php 
+									 $pages = get_pages();
+									foreach ( $pages as $page ) {
+										$menu_name = esc_html($page->post_title);
+										$menu_link = get_page_link( $page->ID );
+										echo "<a href='". esc_url($menu_link) ."'>". esc_html($menu_name) ."</a>";
+									}
+								?>
+							</div>
+						</div>
+						<div class="footer-middle-panel footer-panel">
+							<div class="footer-nav-title">Secteur d'intervention</div>
+							<div class="footer-town"> 
+								Quimper - Ergué Gabéric - Plomelin  Pluguffan - Briec - Combrit - Benodet  Fouesnant - Pont L’abbé - Concarneau  Douarnenez - Rosporden 
+							</div>
+						</div>
+						<div class="footer-right-panel footer-panel">
+							<div class="footer-nav-title">Informations</div>
+							<div class="footer-info">Cornouaille serrurerie</div>
+							<div class="footer-tel">06 59 34 21 75</div>
+							<div class="footer-info-small">7j/7 - 24h/24</div>
+							<div class="footer-info-small">Garantie décenale préservée</div>
+						</div>
+					</div>
+
+					<div class="legal-terms">
+						Cornouaille Serrurerie - 06 59 34 21 75 - SIRET: 83969715800013 - <a href="#">Mentions Légales</a>
+					</div>
 				</div>
 
 			</div><!-- .boxed-wrapper -->
