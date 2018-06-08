@@ -70,7 +70,7 @@
 							<div class="footer-info">Cornouaille serrurerie</div>
 							<div class="footer-tel">06 59 34 21 75</div>
 							<div class="footer-info-small">7j/7 - 24h/24</div>
-							<div class="footer-info-small">Garantie décenale préservée</div>
+							<div class="footer-info-small">Garantie décennale préservée</div>
 						</div>
 					</div>
 
